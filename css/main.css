@@ -166,15 +166,21 @@ a {
 a:hover {
   text-decoration: underline;
   /* TODO update styling for hover/click actions once a dropdown menu is set up */
+  transition-duration: 0.2s;
 }
 
 button {
   font-weight: 300;
   text-transform: uppercase;
-  padding: 10px;
+  padding: 15px;
   background-color: rgb(183, 76, 56);
   color: white;
-  /* NO BORDER */
+  border: none;
+}
+
+button:hover {
+  background-color: rgba(183, 76, 56,.85);
+  transition-duration: 0.2s;
 }
 
 /* ----- Typography & Coloring Styles ----- */
@@ -307,6 +313,10 @@ nav li {
 
 .skills-section i {
   font-size: 4em;
+}
+
+.skills-section button {
+  margin-top: 25px;
 }
 
 /* ----- Base Work ----- */
