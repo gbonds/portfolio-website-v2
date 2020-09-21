@@ -247,7 +247,7 @@ nav li {
 
 /* ----- Base Footer ----- */
 
-.contact-section {
+#contact-section {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -255,12 +255,12 @@ nav li {
   /* This should follow same formatting as main sections, listed above */
 }
 
-.contact-section .content-container {
+#contact-section .content-container {
   width: 100%;
   justify-content: space-between;
 }
 
-.contact-section .fontawesome-icon {
+#contact-section .fontawesome-icon {
   font-size: 3em;
   background-color: #b3c6b3ff;
   /* color: white; */
@@ -285,17 +285,17 @@ nav li {
 
 /* ----- Base Hero ----- */
 
-.hero-section h2 {
+#hero-section h2 {
   font-size: 3.25em;
   font-weight: 600;
   color: #5c8194;
 }
 
-.hero-section .content-container {
+#hero-section .content-container {
   min-height: 200px;
 }
 
-.hero-section p {
+#hero-section p {
   padding: 15px 0;
   text-align: center;
   font-size: 1.25em;
@@ -303,7 +303,7 @@ nav li {
 
 /* ----- Base Skills ----- */
 
-.skills-section article {
+#skills-section article {
   width: 70%;
   /* TODO how to make these square? could use padding % to match 1:1 aspect ratio, 
   or set min height and width, then flex-grow?? */
@@ -311,17 +311,17 @@ nav li {
   border: 1.75px dotted #585858;
 }
 
-.skills-section i {
+#skills-section i {
   font-size: 4em;
 }
 
-.skills-section button {
+#skills-section button {
   margin-top: 25px;
 }
 
 /* ----- Base Work ----- */
 
-.work-section article {
+#work-section article {
   width: 100%;
   padding: 0; 
   /* setting padding to zero so image fills full width of article */
@@ -331,7 +331,7 @@ nav li {
   
 }
 
-.work-section img {
+#work-section img {
   width: 100%;
 }
 
@@ -364,7 +364,7 @@ nav li {
 
 /* ----- Base Testimonials ----- */
 
-.testimonials-section article {
+#testimonials-section article {
   width: 100%;
   padding: 30px;
   /* has double the padding than other section articles */
@@ -373,7 +373,7 @@ nav li {
   border: 1.75px dotted #585858;
 }
 
-.testimonials-section span {
+#testimonials-section span {
   display: block;
   text-align: right;
   padding-top: 15px;
@@ -383,21 +383,21 @@ nav li {
 
 /* ----- Base About ----- */
 
-.about-section {
+#about-section {
   padding: 50px 0 0 0;
   /* removes 50px padding-bottom set by section formatting so that image lines up with footer */
 }
 
-.about-section h3 {
+#about-section h3 {
   width: 75%;
 }
 
-.about-section .content-container {
+#about-section .content-container {
   min-height: 400px;
   text-align: center;
 }
 
-.about-section img {
+#about-section img {
   width: 100%;
 }
 
