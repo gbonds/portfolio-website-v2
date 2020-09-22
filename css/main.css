@@ -85,12 +85,11 @@ textarea {
 
 /* REMOVE ONCE DONE FORMATTING */
 
-/*
 section {
   border: 1px solid blue;
 }
 
-.content-container {
+.content-container, nav, h1 {
   border: 2px dotted red;
 }
 
@@ -105,7 +104,6 @@ article {
 h2, h3 {
   border: 1px solid black;
 }
-*/
 
 /* ----- Global Styles ----- */
 
@@ -123,6 +121,7 @@ body {
 section {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-flow: row wrap;
   padding: 50px 0;
   /* IMPORTANT using padding here so that section background colors line up */
@@ -134,7 +133,7 @@ section {
   margin: 25px 50px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   flex-flow: row wrap;
 }
 
@@ -179,7 +178,7 @@ button {
 }
 
 button:hover {
-  background-color: rgba(183, 76, 56,.85);
+  background-color: rgba(183, 76, 56, .85);
   transition-duration: 0.2s;
 }
 
@@ -210,7 +209,7 @@ h4 {
 }
 
 .green-background {
-  background-color:#b3c6b3ff;
+  background-color: #b3c6b3ff;
 }
 
 /* TODO add color classes for backgrounds */
@@ -278,7 +277,6 @@ nav li {
   font-weight: 300;
 }
 
-
 /* ==========================================================================
    Base Homepage Styles
    ========================================================================== */
@@ -289,10 +287,13 @@ nav li {
   font-size: 3.25em;
   font-weight: 600;
   color: #5c8194;
+  width: 75%;
+  text-align: center;
 }
 
 #hero-section .content-container {
   min-height: 200px;
+  width: 75%;
 }
 
 #hero-section p {
@@ -323,12 +324,11 @@ nav li {
 
 #work-section article {
   width: 100%;
-  padding: 0; 
+  padding: 0;
   /* setting padding to zero so image fills full width of article */
   margin-bottom: 25px;
   /* added some extra margin to bottom for visual readability */
   color: white;
-  
 }
 
 #work-section img {
@@ -360,7 +360,6 @@ nav li {
   color: #b74c38ff;
   font-size: .75em;
 }
-
 
 /* ----- Base Testimonials ----- */
 
@@ -481,71 +480,143 @@ nav li {
 }
 
 /* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
+  Media Queries for Responsive Design.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
+@media only screen and (min-width: 768px) {
+  /* Tablet and Desktop Styles */
+  section {
+    padding: 75px 0;
+  }
+  .content-container {
+    margin: 50px 75px;
+  }
+  article {
+    margin: 0;
+  }
+  h3 {
+    width: 30%;
+    font-size: 2.75em;
+  }
+  /* --------------- Desktop Header --------------- */
+  header {
+    padding: 25px 50px;
+  }
+  header h1 {
+    font-size: 2.5em;
+  }
+  nav {
+    width: 50%;
+  }
+  nav li {
+    font-size: 1em;
+  }
+  /* --------------- Desktop Homepage --------------- */
+      /* ----- Desktop Hero ----- */
+      #hero-section h2 {
+        font-size: 6em;
+      }
+      #hero-section .content-container {
+        max-width: 600px;
+        /* setting max-width to 600px to maintain line break before "Keep scrolling" p element */
+      }
+      #hero-section br {
+        display: none;
+      }
+      /* ----- Desktop Skills ----- */
+      #skills-section .content-container {
+        width: 100%;
+        justify-content: space-around;
+      }
+      #skills-section article {
+        width: 25%;
+        /* TODO how to make heights match? */
+        max-width: 210px;
+        min-height: 210px;
+      }
+      #skills-section h4 {
+        font-size: 1.25em;
+      }
+      /* ----- Desktop Work ----- */
+      #work-section .content-container {
+        justify-content: space-between;
+      }
+      #work-section article {
+        width: 45%;
+        margin-bottom: 0;
+        /* resets margin set in mobile design */
+      }
+      .portfolio-item-description {
+        min-height: 145px;
+      }
+      .portfolio-item-description h4 {
+        font-size: 1.5em;
+  }
+      .portfolio-item-description .link-container {
+        padding: 25px;
+        font-size: 1em;
+        text-align: right;
+      }
+     /* ----- Desktop Testimonials ----- */
+     #testimonials-section article {
+       margin-bottom: 50px;
+       width: 60%;
+       padding: 50px;
+     }
 
-@media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
 
-/* ==========================================================================
+
+  /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
    https://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
-
-@media print {
-  *, *::before, *::after {
-    background: #fff !important;
-    color: #000 !important;
-    /* Black prints faster */
-    box-shadow: none !important;
-    text-shadow: none !important;
-  }
-  a, a:visited {
-    text-decoration: underline;
-  }
-  a[href]::after {
-    content: " (" attr(href) ")";
-  }
-  abbr[title]::after {
-    content: " (" attr(title) ")";
-  }
-  /*
+  @media print {
+    *, *::before, *::after {
+      background: #fff !important;
+      color: #000 !important;
+      /* Black prints faster */
+      box-shadow: none !important;
+      text-shadow: none !important;
+    }
+    a, a:visited {
+      text-decoration: underline;
+    }
+    a[href]::after {
+      content: " (" attr(href) ")";
+    }
+    abbr[title]::after {
+      content: " (" attr(title) ")";
+    }
+    /*
    * Don't show links that are fragment identifiers,
    * or use the `javascript:` pseudo protocol
    */
-  a[href^="#"]::after, a[href^="javascript:"]::after {
-    content: "";
-  }
-  pre {
-    white-space: pre-wrap !important;
-  }
-  pre, blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
-  /*
+    a[href^="#"]::after, a[href^="javascript:"]::after {
+      content: "";
+    }
+    pre {
+      white-space: pre-wrap !important;
+    }
+    pre, blockquote {
+      border: 1px solid #999;
+      page-break-inside: avoid;
+    }
+    /*
    * Printing Tables:
    * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
    */
-  thead {
-    display: table-header-group;
+    thead {
+      display: table-header-group;
+    }
+    tr, img {
+      page-break-inside: avoid;
+    }
+    p, h2, h3 {
+      orphans: 3;
+      widows: 3;
+    }
+    h2, h3 {
+      page-break-after: avoid;
+    }
   }
-  tr, img {
-    page-break-inside: avoid;
-  }
-  p, h2, h3 {
-    orphans: 3;
-    widows: 3;
-  }
-  h2, h3 {
-    page-break-after: avoid;
-  }
-}
