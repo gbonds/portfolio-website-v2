@@ -85,6 +85,7 @@ textarea {
 
 /* REMOVE ONCE DONE FORMATTING */
 
+/*
 section {
   border: 1px solid blue;
 }
@@ -104,6 +105,7 @@ article {
 h2, h3 {
   border: 1px solid black;
 }
+*/
 
 /* ----- Global Styles ----- */
 
@@ -513,6 +515,15 @@ nav li {
   nav li {
     font-size: 1em;
   }
+  /* --------------- Tablet Footer --------------- */
+  #contact-section h3 {
+    width: 50%;
+    max-width: 275px;
+  }
+  #contact-section .content-container {
+    width: 75%;
+    justify-content: space-around;
+  }
   /* --------------- Tablet Homepage --------------- */
   /* ----- Tablet Hero ----- */
   #hero-section h2 {
@@ -584,6 +595,23 @@ nav li {
   }
   @media only screen and (min-width: 1200px) {
     /* Desktop Styles */
+    /* TODO set max-width to content? */
+    /* --------------- Desktop Footer --------------- */
+    #contact-section {
+      display: flex;
+      flex-flow: row wrap;
+    }
+    #contact-section h3 {
+      width: 25%;
+      max-width: 200px;
+      text-align: left;
+      align-self: center;
+      padding-left: 10px;
+    }
+    #contact-section .content-container {
+      width: 60%;
+    }
+    /* --------------- Desktop Homepage --------------- */
     /* ----- Desktop About ----- */
     #about-section .image-content-container {
       display: flex;
@@ -599,10 +627,7 @@ nav li {
     #about-section img {
       margin: 50px;
     }
-
     /* TODO add tablet and desktop styles for Connect, particularly h3 width */
-
-    
   }
   /* ==========================================================================
    Print styles.
