@@ -556,8 +556,7 @@ nav li {
   }
   #work-section article {
     width: 45%;
-    margin-bottom: 0;
-    /* resets margin set in mobile design */
+    margin-bottom: 75px;
   }
   .portfolio-item-description {
     min-height: 145px;
