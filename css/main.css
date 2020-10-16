@@ -698,6 +698,27 @@ nav li {
   #about-section img {
     margin: 0 50px 50px 50px;
   }
+  /* --------------- Tablet Project Page --------------- */
+  .project-section .title-container {
+    width: 45%;
+  }
+
+  .project-section .title-container h3 {
+    font-size: 2em;
+  }
+
+  .project-section .title-container h4 {
+    font-size: 1.25em;
+  }
+
+  .project-item-skills h5 {
+    font-size: 1.25em;
+  }
+
+  .project-item-skills a {
+    font-size: 1.125em;
+  }
+
   @media only screen and (min-width: 1200px) {
     /* Desktop Styles */
     /* TODO set max-width to content? */
