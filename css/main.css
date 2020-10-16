@@ -768,11 +768,11 @@ nav li {
     flex-wrap: row wrap;
   }
   .project-img-desktop {
-    /* width: 70%; */
+    width: 70%;
   }
   .project-img-mobile {
-    /* display: block; */
-    height: 100%;
+    display: block; 
+    width: 25%;
   }
 }
 
