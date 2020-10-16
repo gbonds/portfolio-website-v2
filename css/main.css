@@ -214,8 +214,6 @@ h4 {
   background-color: #b3c6b3ff;
 }
 
-/* TODO add color classes for backgrounds */
-
 /* ----- Base Header ----- */
 
 header {
@@ -223,6 +221,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-flow: row wrap;
   color: white;
 }
 
@@ -402,6 +401,30 @@ nav li {
 #about-section img {
   width: 100%;
   height: auto;
+}
+
+/* ==========================================================================
+   Base Project Page Styles
+   ========================================================================== */
+
+/* ----- Base Project Header ----- */
+
+.project-header h1 {
+  width: 100%;
+  text-align: center;
+}
+
+.project-header nav {
+  width: 100%;
+}
+
+.project-header span {
+  color: #5c8194;
+}
+
+.title-container {
+  background-color: white;
+  border: 1.75px dotted #585858;
 }
 
 /* ==========================================================================
