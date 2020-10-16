@@ -120,7 +120,7 @@ body {
   color: #585858;
 }
 
-h1, h2, h3, h4, p, figure {
+h1, h2, h3, h4, h5, h6, p, figure {
   margin: 0;
   /* overrides default margins */
 }
@@ -208,6 +208,11 @@ h3 {
 h4 {
   font-size: 1.125em;
   font-weight: 700;
+}
+
+.link-container {
+  font-weight: 300;
+  color: #b74c38ff;
 }
 
 .gray-background {
@@ -369,8 +374,6 @@ nav li {
 .portfolio-item-description .link-container {
   padding: 15px;
   text-transform: uppercase;
-  font-weight: 300;
-  color: #b74c38ff;
   font-size: .75em;
 }
 
@@ -415,6 +418,11 @@ nav li {
   height: auto;
 }
 
+#about-section .content-container p {
+  line-height: 1.5;
+  /* same line height as Project Page's .project-item-blurb */
+}
+
 /* ==========================================================================
    Base Project Page Styles
    ========================================================================== */
@@ -435,6 +443,7 @@ nav li {
 }
 
 /* ----- Base Project Title ----- */
+
 .project-section .title-container {
   width: 85%;
   padding: 5px;
@@ -449,6 +458,12 @@ nav li {
 }
 
 /* ----- Base Project Image ----- */
+
+.project-img-container {
+  margin: 25px 0;
+  /* same margin as project-item-skills and -blurb */
+}
+
 .project-img-container img {
   width: 100%;
 }
@@ -458,6 +473,40 @@ nav li {
   /* TODO when styling desktop, have mobile img display */
 }
 
+/* ----- Base Project Description ----- */
+
+.project-desc-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: row wrap;
+  margin-bottom: 25px;
+}
+
+.project-item-skills, .project-item-blurb {
+  background-color: white;
+  border: 1.75px dotted #585858;
+  margin: 25px 0;
+  /* same margin as .project-img-container */
+}
+
+.project-item-skills {
+  text-align: center;
+  width: 85%;
+  padding: 15px;
+}
+
+.project-item-skills h5 {
+  font-size: 1em;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.project-item-blurb {
+  padding: 15px;
+  line-height: 1.5;
+  /* same line height as #about-section .content-container p */
+}
 
 /* ==========================================================================
    Helper classes
@@ -636,13 +685,11 @@ nav li {
   #about-section .title-container {
     width: 50%;
   }
-  
   #about-section .image-content-container {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
   }
-
   #about-section .content-container, #about-section img {
     width: 90%;
     max-width: 500px;
