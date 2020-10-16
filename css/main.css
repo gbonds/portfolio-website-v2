@@ -180,7 +180,7 @@ section {
 }
 
 .content-container {
-  margin: 25px 50px;
+  margin: 25px;
   display: flex;
   justify-content: center;
   align-items: start;
@@ -446,6 +446,16 @@ nav li {
 
 .project-section .title-container h4 {
   font-weight: 300;
+}
+
+/* ----- Base Project Image ----- */
+.project-img-container img {
+  width: 100%;
+}
+
+.project-img-mobile {
+  display: none;
+  /* TODO when styling desktop, have mobile img display */
 }
 
 
