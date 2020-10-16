@@ -120,31 +120,6 @@ body {
   color: #585858;
 }
 
-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-  padding: 50px 0;
-  /* IMPORTANT using padding here so that section background colors line up */
-  /* Set the same padding for footer contact-section below, 
-  it's part of footer but follows same formatting as main sections */
-}
-
-.content-container {
-  margin: 25px 50px;
-  display: flex;
-  justify-content: center;
-  align-items: start;
-  flex-flow: row wrap;
-}
-
-article {
-  margin-top: 25px;
-  padding: 15px;
-  text-align: center;
-}
-
 h1, h2, h3, h4, p, figure {
   margin: 0;
   /* overrides default margins */
@@ -184,6 +159,41 @@ button:hover {
   transition-duration: 0.2s;
 }
 
+/* ----- Layout Styles ----- */
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  padding: 50px 0;
+  /* IMPORTANT using padding here so that section background colors line up */
+  /* Set the same padding for footer contact-section below, 
+  it's part of footer but follows same formatting as main sections */
+}
+
+.title-container {
+  text-align: center;
+  color: #5c8194;
+  background-color: white;
+  border: 1.75px dotted #585858;
+  width: 50%;
+}
+
+.content-container {
+  margin: 25px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-flow: row wrap;
+}
+
+article {
+  margin-top: 25px;
+  padding: 15px;
+  text-align: center;
+}
+
 /* ----- Typography & Coloring Styles ----- */
 
 h1, h2, h3 {
@@ -193,11 +203,7 @@ h1, h2, h3 {
 
 h3 {
   font-size: 2em;
-  width: 50%;
-  text-align: center;
   color: #5c8194;
-  background-color: white;
-  border: 1.75px dotted #585858;
 }
 
 h4 {
@@ -253,6 +259,10 @@ nav li {
   flex-flow: row wrap;
   padding: 50px 0;
   /* This should follow same formatting as main sections, listed above */
+}
+
+#contact-section .title-container {
+  width: 75%;
 }
 
 #contact-section .content-container {
@@ -388,7 +398,7 @@ nav li {
   /* removes 50px padding-bottom set by section formatting so that image lines up with footer */
 }
 
-#about-section h3 {
+#about-section .title-container {
   width: 75%;
 }
 
@@ -420,11 +430,6 @@ nav li {
 
 .project-header span {
   color: #5c8194;
-}
-
-.title-container {
-  background-color: white;
-  border: 1.75px dotted #585858;
 }
 
 /* ==========================================================================
@@ -515,6 +520,9 @@ nav li {
   section {
     padding: 75px 0;
   }
+  .title-container {
+    width: 35%;
+  }
   .content-container {
     margin: 50px 75px;
   }
@@ -522,7 +530,6 @@ nav li {
     margin: 0;
   }
   h3 {
-    width: 30%;
     font-size: 2.75em;
   }
   /* --------------- Tablet Header --------------- */
@@ -539,9 +546,9 @@ nav li {
     font-size: 1em;
   }
   /* --------------- Tablet Footer --------------- */
-  #contact-section h3 {
+  #contact-section .title-container {
     width: 50%;
-    max-width: 275px;
+    max-width: 300px;
   }
   #contact-section .content-container {
     width: 75%;
@@ -599,14 +606,16 @@ nav li {
     padding: 50px;
   }
   /* ----- Tablet About ----- */
+  #about-section .title-container {
+    width: 50%;
+  }
+  
   #about-section .image-content-container {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
   }
-  #about-section h3 {
-    margin: 0 200px;
-  }
+
   #about-section .content-container, #about-section img {
     width: 90%;
     max-width: 500px;
@@ -623,7 +632,7 @@ nav li {
       display: flex;
       flex-flow: row wrap;
     }
-    #contact-section h3 {
+    #contact-section .title-container {
       width: 25%;
       max-width: 200px;
       text-align: left;
@@ -638,7 +647,7 @@ nav li {
     #about-section .image-content-container {
       display: flex;
     }
-    #about-section h3 {
+    #about-section .title-container {
       width: 30%;
     }
     #about-section .content-container, #about-section img {
