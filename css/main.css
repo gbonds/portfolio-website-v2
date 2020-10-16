@@ -716,6 +716,8 @@ nav li {
   }
 }
 
+/* Tablet media query ends */
+
 @media only screen and (min-width: 1200px) {
   /* Desktop Styles */
   /* TODO set max-width to content? */
@@ -762,19 +764,37 @@ nav li {
     font-size: 1.75em;
   }
   .project-img-container {
-    display: flex;
+    /* display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    flex-wrap: row wrap;
+    flex-wrap: row wrap; */
   }
   .project-img-desktop {
-    width: 70%;
+    /* width: 70%; */
+    /* TODO should I set a max-width for image? also consider max-widths for all content on desktops larger than 1440px. */
+    max-width: 1000px;
   }
   .project-img-mobile {
-    display: block; 
-    width: 25%;
+    /* display: block; 
+    width: 25%; */
   }
+  .project-desc-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-flow: row wrap;
+  }
+.project-item-skills {
+  width: 30%;
 }
+
+.project-item-blurb {
+  width: 60%;
+}
+
+
+
+} /* Desktop media query ends */
 
 /* ==========================================================================
    Print styles.
