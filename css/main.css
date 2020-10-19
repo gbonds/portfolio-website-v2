@@ -364,21 +364,20 @@ nav li {
   background-color: white;
   color: #585858;
   border: 1.75px dotted #585858;
+  padding: 15px;
 }
 
 .portfolio-item-description h4 {
   text-align: left;
-  padding: 15px 15px 10px 15px;
-  /* adding padding to just description, not image */
+  padding-bottom: 10px;
 }
 
 .portfolio-item-description p {
   text-align: left;
-  padding: 0 15px 0 15px;
 }
 
 .portfolio-item-description .link-container {
-  padding: 15px;
+  padding-top: 15px;
   text-transform: uppercase;
   font-size: .75em;
 }
@@ -430,7 +429,7 @@ nav li {
 }
 
 /* ==========================================================================
-   Base Project Page Styles
+   Base Project Overview & Pages Styles
    ========================================================================== */
 
 /* ----- Base Project Header ----- */
@@ -448,7 +447,17 @@ nav li {
   color: #5c8194;
 }
 
-/* ----- Base Project Title ----- */
+/* ----- Base Project Overview ----- */
+#portfolio-intro-container .portfolio-item-description {
+  margin-top: 0;
+  /* clears set margin */
+}
+
+#portfolio-intro-container button {
+  margin-top: 25px;
+}
+
+/* ----- Base Project Page Title ----- */
 
 .project-section .title-container {
   width: 85%;
@@ -463,7 +472,7 @@ nav li {
   font-weight: 300;
 }
 
-/* ----- Base Project Image ----- */
+/* ----- Base Project Page Image ----- */
 
 .project-img-container {
   margin: 25px 0;
@@ -479,7 +488,7 @@ nav li {
   /* TODO when styling desktop, have mobile img display */
 }
 
-/* ----- Base Project Description ----- */
+/* ----- Base Project Page Description ----- */
 
 .project-desc-container {
   display: flex;
@@ -675,13 +684,15 @@ nav li {
     margin-bottom: 75px;
   }
   .portfolio-item-description {
-    min-height: 145px;
+    /* min-height: 145px; */
+    /* TODO how to make height of descriptions always match each other? */
   }
   .portfolio-item-description h4 {
     font-size: 1.5em;
   }
   .portfolio-item-description .link-container {
-    padding: 25px;
+    padding: 25px 25px 10px 25px;
+    /* setting padding-bottom to 10, adds to 15px bottom padding from item-desc */
     font-size: 1em;
     text-align: right;
   }
