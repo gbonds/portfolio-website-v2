@@ -157,6 +157,12 @@ button {
 button:hover {
   background-color: rgba(183, 76, 56, .85);
   transition-duration: 0.2s;
+  cursor: pointer;
+}
+
+button:active {
+  font-weight: bold;
+  transition-duration: 0.2s;
 }
 
 /* ----- Layout Styles ----- */
@@ -508,7 +514,7 @@ nav li {
   /* same line height as #about-section .content-container p */
 }
 
-.btn-visit-site {
+.btn-visit-site a {
   width: 45%;
 }
 
@@ -718,7 +724,7 @@ nav li {
   .project-item-skills a {
     font-size: 1.125em;
   }
-  .btn-visit-site {
+  .btn-visit-site a {
     width: 50%;
     font-size: 1.125em;
   }
@@ -801,7 +807,7 @@ nav li {
   max-width: 800px;
 }
 
-.btn-visit-site {
+.btn-visit-site a {
   width: 45%;
   max-width: 600px;
 }
