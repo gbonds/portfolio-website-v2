@@ -448,9 +448,14 @@ nav li {
 }
 
 /* ----- Base Project Overview ----- */
+.project-overview-section {
+  padding-top: 0;
+  /* clears set padding for section */
+}
+
 #portfolio-intro-container .portfolio-item-description {
   margin-top: 0;
-  /* clears set margin */
+  /* clears set margin for item-desc */
 }
 
 #portfolio-intro-container button {
@@ -718,6 +723,11 @@ nav li {
   }
   #about-section img {
     margin: 0 50px 50px 50px;
+  }
+  
+  /* --------------- Tablet Project Overview --------------- */
+  .project-overview-section {
+    padding-top: 25px;
   }
   /* --------------- Tablet Project Page --------------- */
   .project-page-section .title-container {
