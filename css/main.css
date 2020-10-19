@@ -459,16 +459,16 @@ nav li {
 
 /* ----- Base Project Page Title ----- */
 
-.project-section .title-container {
+.project-page-section .title-container {
   width: 85%;
   padding: 5px;
 }
 
-.project-section .title-container h3 {
+.project-page-section .title-container h3 {
   font-size: 1.5em;
 }
 
-.project-section .title-container h4 {
+.project-page-section .title-container h4 {
   font-weight: 300;
 }
 
@@ -720,13 +720,13 @@ nav li {
     margin: 0 50px 50px 50px;
   }
   /* --------------- Tablet Project Page --------------- */
-  .project-section .title-container {
+  .project-page-section .title-container {
     width: 45%;
   }
-  .project-section .title-container h3 {
+  .project-page-section .title-container h3 {
     font-size: 2em;
   }
-  .project-section .title-container h4 {
+  .project-page-section .title-container h4 {
     font-size: 1.25em;
   }
   .project-item-skills h5 {
@@ -780,10 +780,10 @@ nav li {
   }
   /* TODO add tablet and desktop styles for Connect, particularly h3 width */
   /* --------------- Desktop Project Page --------------- */
-  .project-section .title-container h3 {
+  .project-page-section .title-container h3 {
     font-size: 2.75em;
   }
-  .project-section .title-container h4 {
+  .project-page-section .title-container h4 {
     font-size: 1.75em;
   }
   .project-img-container {
