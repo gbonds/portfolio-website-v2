@@ -508,6 +508,10 @@ nav li {
   /* same line height as #about-section .content-container p */
 }
 
+.btn-visit-site {
+  width: 45%;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -714,9 +718,11 @@ nav li {
   .project-item-skills a {
     font-size: 1.125em;
   }
-}
-
-/* Tablet media query ends */
+  .btn-visit-site {
+    width: 50%;
+    font-size: 1.125em;
+  }
+} /* Tablet media query ends */
 
 @media only screen and (min-width: 1200px) {
   /* Desktop Styles */
@@ -783,13 +789,21 @@ nav li {
     justify-content: space-around;
     align-items: flex-start;
     flex-flow: row wrap;
+    width: 100%;
   }
 .project-item-skills {
   width: 30%;
+  max-width: 400px;
 }
 
 .project-item-blurb {
   width: 60%;
+  max-width: 800px;
+}
+
+.btn-visit-site {
+  width: 45%;
+  max-width: 600px;
 }
 
 
