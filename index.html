@@ -12,10 +12,13 @@
   <meta property="og:url" content="">
   <meta property="og:image" content="">
 
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="coffee_transparentbg.png">
-  <!-- Place favicon.ico in the root directory -->
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
 
+  <!-- Stylesheets -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 
@@ -39,9 +42,11 @@
         <li>
           <a href="#work-section">Work</a>
         </li>
+        <!-- HIDING TESTIMONIALS 
         <li>
           <a href="#testimonials-section">Testimonials</a>
         </li>
+        -->
         <li>
           <a href="#about-section">About</a>
         </li>
@@ -55,7 +60,7 @@
   <main>
 
     <section id="hero-section">
-      <h2>Hello there!</h2>
+      <h2>Hello there.</h2>
       <div class="content-container">
         <p>My name is Grace Bonds. <br> <br> I'm a web developer based in Philadelphia.</p>
         <!-- TODO how to best format for mobile / desktop? 
@@ -65,7 +70,9 @@
     </section>
 
     <section id="skills-section" class="green-background">
-      <h3>What I Do</h3>
+      <div class="title-container">
+        <h3>What I Do</h3>
+      </div>
       <div class="content-container">
         <article>
           <p class="fontawesome-icon">
@@ -89,13 +96,17 @@
           <p>Plan for continued maintenance of your site.</p>
         </article>
       </div>
-      <button>
-        Let's get to work
-      </button>
+      <a href="#contact-section">
+        <button>
+          Let's get to work
+        </button>
+      </a>
     </section>
 
     <section id="work-section" class="gray-background">
-      <h3>My Work</h3>
+      <div class="title-container">
+        <h3>My Work</h3>
+      </div>
       <div class="content-container">
         <article>
           <img src="img/sitepic-spc_02.png" alt="Screenshot of Sasha Patterson Coaching website">
@@ -103,7 +114,7 @@
             <h4>Sasha Patterson Coaching</h4>
             <p>Mobile-first informational site for a new service.</p>
             <div class="link-container">
-              <a href="#">Learn More</a>
+              <a href="projects/view-projects/sashapattersoncoaching.html">Learn More</a>
             </div>
           </div> <!-- portfolio-item-description ends -->
         </article>
@@ -113,38 +124,23 @@
             <h4>Unplugged Retreat</h4>
             <p>Responsive informational site for retreat location.</p>
             <div class="link-container">
-              <a href="#">Learn More</a>
-            </div>
-          </div> <!-- portfolio-item-description ends -->
-        </article>
-        <article>
-          <img src="img/sitepic-skunkthedog_02.png" alt="Screenshot of Skunk the Dog website">
-          <div class="portfolio-item-description">
-            <h4>Skunk the Dog</h4>
-            <p>Fun & friendly informational site for influencer.</p>
-            <div class="link-container">
-              <a href="#">Learn More</a>
-            </div>
-          </div> <!-- portfolio-item-description ends -->
-        </article>
-        <article>
-          <img src="img/sitepic-skunktowncoffee-1200.png" alt="Screenshot of Skunktown Coffee website">
-          <div class="portfolio-item-description">
-            <h4>Skunktown Coffee</h4>
-            <p>Redesign of a beloved local cafe's site.</p>
-            <div class="link-container">
-              <a href="#">Learn More</a>
+              <a href="projects/view-projects/unpluggedretreat.html">Learn More</a>
             </div>
           </div> <!-- portfolio-item-description ends -->
         </article>
       </div> <!-- content-container ends -->
-      <button>
-        See more projects
-      </button>
+      <a href="projects/index.html">
+        <button>
+          See more projects
+        </button>
+      </a>
     </section>
 
+    <!-- HIDING TESTIMONIALS 
     <section id="testimonials-section" class="green-background">
-      <h3>Testimonials</h3>
+      <div class="title-container">
+        <h3>Testimonials</h3>
+      </div>
       <div class="content-container">
         <article>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
@@ -159,9 +155,12 @@
         </article>
       </div>
     </section>
+    
 
     <section id="about-section">
-      <h3>More About Me</h3>
+      <div class="title-container">
+        <h3>More About Me</h3>
+      </div>
       <div class="image-content-container">
         <div class="content-container">
           <p>My work combines creativity and curiosity with efficiency and organization. I'm a continuous learner who
@@ -180,7 +179,9 @@
 
   <footer class="gray-background">
     <div id="contact-section">
-      <h3>Let's Connect</h3>
+      <div class="title-container">
+        <h3>Let's Connect</h3>
+      </div>
       <div class="content-container">
         <a href="mailto:gracebonds.webdev@gmail.com">
           <p class="fontawesome-icon">
