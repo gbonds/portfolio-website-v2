@@ -456,6 +456,7 @@ nav li {
 #portfolio-intro-container .portfolio-item-description {
   margin-top: 0;
   /* clears set margin for item-desc */
+  padding: 25px;
 }
 
 #portfolio-intro-container button {
