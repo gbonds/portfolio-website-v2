@@ -684,6 +684,7 @@ nav li {
   /* ----- Tablet Work ----- */
   #work-section .content-container {
     justify-content: space-between;
+    width: 100%;
   }
   #work-section article {
     width: 45%;
@@ -716,6 +717,7 @@ nav li {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    width: 100%;
   }
   #about-section .content-container, #about-section img {
     width: 90%;
@@ -775,9 +777,6 @@ nav li {
     width: 25%;
   }
   /* ----- Desktop About ----- */
-  #about-section .image-content-container {
-    display: flex;
-  }
   #about-section .title-container {
     width: 30%;
   }
